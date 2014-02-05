@@ -25,7 +25,7 @@ Add the markup to your template
     </div>
     
     {#with _page.newMsg as :c}
-      <form:input type="text" field="{:c.name}" value="{:c.name}" label="Name" name="name" required="true">
+      <form:input type="text" value="{:c.name}" label="Name" name="name" required="true">
       <form:input type="email" value="{:c.email}" label="Email" name="email" required="true">
       <form:input type="phone" value="{:c.phone}" label="Phone <small>(optional)</small>" name="phone">
       <form:textarea label="Messages" rows="4" required="true" value="{:c.message}" name="message">
