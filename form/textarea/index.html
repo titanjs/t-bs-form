@@ -1,0 +1,10 @@
+<textarea:>
+  <div class="form-group {#if :self.error}has-error{/}">
+    <label class="control-label col-md-2">{@label}</label>
+    <div class="col-md-10">
+      <textarea x-as="textarea" x-bind="change: textareaChange, blur: textareaChange, keyup: textareaChange" name="{@name}" rows="{@rows}" {#if @required}required="true"{/} class="form-control {@class}">
+        {@value}
+      </textarea>
+      <span class="help-block">{:self.error}</span>
+    </div>
+  </div>
