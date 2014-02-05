@@ -1,6 +1,17 @@
 # Titan Bootstrap Form Component
 
-## Usaage
+## Usage
+
+Import the compentent in your `app.js` file
+
+```javascript
+
+var app = require('derby').createApp(module)
+  .use(require('../../components/form'))
+
+```
+
+Add the markup to your template
 
 ```html
 
