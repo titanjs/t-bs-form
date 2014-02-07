@@ -1,6 +1,6 @@
-// exports.init = function(model) {};
-
-exports.create = function(model, dom) {};
+exports.create = function(model, dom) {
+  model.set('uid', dom.element('textarea').id);
+};
 
 exports.textareaChange = function() {
   // check for errors

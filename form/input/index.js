@@ -1,7 +1,7 @@
 exports.init = function(model) {};
 
 exports.create = function(model, dom) {
-  model.set('uid', model.id().split('-')[0]); 
+  model.set('uid', dom.element('input').id);
 };
 
 exports.inputChange = function() {
